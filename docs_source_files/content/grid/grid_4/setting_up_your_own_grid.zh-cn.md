@@ -7,22 +7,24 @@ weight: 2
 <i class="fas fa-language"></i> Page being translated from 
 English to Chinese. Do you speak Chinese? Help us to translate
 it by sending us pull requests!
+页面正在从英文翻译成中文。 你会说中文吗？ 帮助我们翻译向我们发出请求！
 {{% /notice %}}
 
-## Different Modes of Grid setup in Selenium 4:
-* Standalone
-* Hub and Node
+## Selenium 4中不同的网格设置模式：
+* 独立模式
+* 集线和节点模式
 * Distributed
 * Docker
 
-## Standalone Mode:
+## 独立模式:
 The new Selenium Server Jar contains everything you'd need to run a grid. It is also the easiest mode to spin up a Selenium Grid. By default the server will be listening on http://localhost:4444, and that's the URL you should point your RemoteWebDriver tests. The server will detect the available drivers that it can use from the System PATH
+新的Selenium Server Jar包含运行网格所需的一切。 旋转硒网格也是最简单的模式。 默认情况下，服务器将在 http://localhost:4444 上侦听，这是您应指向RemoteWebDriver测试的URL。 服务器将从系统路径中检测到可以使用的可用驱动程序
 
 ```shell
 java -jar selenium-server-4.0.0-alpha-7.jar standalone
 ```
 
-## Hub and Node Mode:
+## 集线和节点模式:
 
 ### Start the Hub:
 ```shell
